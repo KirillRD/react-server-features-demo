@@ -8,10 +8,10 @@ State of react features in demo:
 - [x] RSC
 - [x] SSR
 - [x] Client components
-- [] `use()` to process promise on client
-- [] Routing
-- [] Server actions
-- [] Partial refetching
+- [ ] `use()` to process promise on client
+- [ ] Routing
+- [ ] Server actions
+- [ ] Partial refetching
 
 ## Usage
 
