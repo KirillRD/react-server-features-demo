@@ -1,0 +1,29 @@
+{
+  "name": "react-server-features-demo",
+  "author": "Kirill Ryabov",
+  "license": "ISC",
+  "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903",
+  "scripts": {
+    "bd": "webpack",
+    "st:ssr": "node src/server/ssr.js",
+    "st:rsc": "node --conditions react-server src/server/rsc.js",
+    "st": "pnpm st:ssr & pnpm st:rsc",
+    "bs": "pnpm bd && pnpm st",
+    "upd": "pnpm add react@rc react-dom@rc react-server-dom-webpack@rc"
+  },
+  "dependencies": {
+    "@babel/core": "^7.24.8",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/register": "^7.24.6",
+    "express": "^4.19.2",
+    "react": "19.0.0-rc-378b305958-20240710",
+    "react-dom": "19.0.0-rc-378b305958-20240710",
+    "react-server-dom-webpack": "19.0.0-rc-378b305958-20240710"
+  },
+  "devDependencies": {
+    "babel-loader": "^9.1.3",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
